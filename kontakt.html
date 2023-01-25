@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+      <header>
+        <nav>
+            <a class="logo" href="om.html"><img src="img/logo.svg" alt="firmalogo af pentagon"></a>
+            <ul>
+                <li><a href="om.html">Om</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="kontaktform">
+    <h1>Kontakt os</h1>
+        <h2>Herunder kan du kontakte via kontaktformularen</h2>
+    <form>
+        <label for="navn">Navn</label>
+        <input id="navn" type="text">
+        
+        <label class="visually-hidden" for="adresse">Adresse</label>
+        <input placeholder="Adresse" id="adresse" type="text">
+        
+        <label for="mail">E-mail</label>
+        <input id="mail" type="email" required>
+        
+        <label for="telefon">Telefonnummer</label>
+        <input id="telefon" type="tel">
+        
+        <label for="parti">Vælg dit parti</label>
+        <select id="parti" name="select">
+            <option value="0" selected="true" disabled>Vælg dit parti</option>
+            <option value="1">SF</option>
+            <option value="2">Frie grønne</option>
+            <option value="3">Socialdemokratiet</option>
+            <option value="4">Danmarksdemokraterne</option>
+        </select>
+        
+        <fieldset class="checkbox">
+            <legend>Vælg services</legend>
+        <div>
+            <input id="støvsugning" type="checkbox" name="services" value="Rengøring">
+            <label for="støvsugning">Rengøring</label>
+            </div>
+            
+            <div>
+            <input id="opvasker" type="checkbox" name="services" value="Opvasker">
+            <label for="opvasker">Opvasker</label>
+            </div>
+            
+            <div>
+            <input id="avisbud" type="checkbox" name="services" value="Avisbud">
+            <label for="avisbud">Avisbud</label>
+            </div>
+        
+        </fieldset>
+        
+        <label for="besked">Besked</label>
+        <textarea id="besked" rows="8" cols="20"></textarea>
+        
+        <fieldset>
+            <legend>Må vi gerne kontakte dig på telefonen?</legend>
+        <input type="radio" id="ja" value="ja" name="kontakt">
+        <label for="ja">Ja</label>
+            
+        <input type="radio" id="nej" value="nej" name="kontakt">
+        <label for="nej">Nej</label>        
+        
+        </fieldset>
+        
+        <input type="submit" name="submit" value="Send besked">
+        
+        </form>
+    </main>
+</body>
+</html>
